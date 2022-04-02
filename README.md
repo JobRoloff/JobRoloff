@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @JobRoloff
-- 👀 Personal Trainer && Gardener 
-- 🌱 Front End web dev
+- 👀 I enjoy growing plants and detailing my car 
+- 🌱 flutter dev
 - 📫 Fb - jobroloff
 
