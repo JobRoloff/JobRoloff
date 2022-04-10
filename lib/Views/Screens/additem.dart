@@ -1,8 +1,7 @@
-import 'package:carapp/Logged_In/users/data/addinventory.dart';
-import 'package:carapp/Logged_In/util_widgets/l_bottom_nav.dart';
-import 'package:carapp/Logged_In/util_widgets/l_drawer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+
+import '../util_widgets/l_bottom_nav.dart';
 
 class AddItemPage extends StatefulWidget {
   const AddItemPage({Key? key,}) : super(key: key);

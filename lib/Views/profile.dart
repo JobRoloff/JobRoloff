@@ -1,8 +1,8 @@
-import 'package:carapp/Logged_In/util_widgets/l_drawer.dart';
+import 'package:carapp/Views/util_widgets/l_bottom_nav.dart';
+import 'package:carapp/Views/util_widgets/l_drawer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import '../util_widgets/l_bottom_nav.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -11,11 +11,18 @@ class ProfilePage extends StatefulWidget {
 }
 class _ProfilePageState extends State<ProfilePage> {
   final user = FirebaseAuth.instance.currentUser!;
+  //include this override to get the preferences upon
+  //load
+  // @override
+  // void initState(){
+  //   super.initState();
+  //   LightPreferences.getLight
+  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      drawer: LDrawer(),
+      drawer: const LDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -54,7 +61,7 @@ class _ProfilePageState extends State<ProfilePage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
               child: TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'bio',
                 ),

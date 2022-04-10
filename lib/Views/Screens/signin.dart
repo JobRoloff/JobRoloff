@@ -1,8 +1,9 @@
 
-import 'package:carapp/providers/google_sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../Controllers/google_sign_in.dart';
 
 class SigninPage extends StatefulWidget {
   const SigninPage({Key? key, required this.title}) : super(key: key);

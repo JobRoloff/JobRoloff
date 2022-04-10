@@ -1,12 +1,11 @@
-import 'package:carapp/Logged_In/util_widgets/l_drawer.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-import '../../util_widgets/l_bottom_nav.dart';
-import '../../util_widgets/menuitems/menuitem.dart';
-import '../../util_widgets/menuitems/menuitems.dart';
+import '../util_widgets/l_bottom_nav.dart';
+import '../util_widgets/l_drawer.dart';
+import '../util_widgets/menuitems/menuitem.dart';
+import '../util_widgets/menuitems/menuitems.dart';
 
 
 class InventoryPage extends StatefulWidget{

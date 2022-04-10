@@ -1,8 +1,9 @@
-import 'package:carapp/providers/google_sign_in.dart';
-import 'package:carapp/providers/nav_ui.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../Controllers/bottom_nav.dart';
+import '../../Controllers/google_sign_in.dart';
 
 class LDrawer extends StatefulWidget {
   const LDrawer({ Key? key }) : super(key: key);
@@ -29,7 +30,6 @@ class _LDrawerState extends State<LDrawer> {
               ],
             ),
           ),
-          const Spacer(),
           ListTile(
             leading: const Icon(Icons.home),
             title: const Text('Home'),
@@ -57,11 +57,11 @@ class _LDrawerState extends State<LDrawer> {
                 context.read<NavUI>().changeNumber(2);
               }
           ),
-          const Spacer(),
           ElevatedButton.icon(
             onPressed: () {
               final myotherprovider = Provider.of<GoogleSignInProvider>(context, listen: false);
               myotherprovider.signOut();
+              _goToHome();
             },
             icon: const Icon(Icons.logout),
             label: const Text("Sign Out"), 

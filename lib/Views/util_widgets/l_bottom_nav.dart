@@ -1,12 +1,8 @@
 
-import 'package:carapp/Logged_In/screens/inventory/inventory.dart';
-import 'package:carapp/Logged_In/screens/loggedinhomepage.dart';
-import 'package:carapp/providers/nav_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../homepage.dart';
-import '../screens/profile.dart';
+import '../../Controllers/bottom_nav.dart';
 
 class LBottomNav extends StatefulWidget {
   LBottomNav({ Key? key }) : super(key: key);
